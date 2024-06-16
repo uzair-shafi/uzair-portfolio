@@ -49,10 +49,10 @@ export default function Page() {
               
                
                 <div className="flex w-full flex-row items-center justify-start ">
-                  <h3 className="ml-2 text-2xl font-bold">{project.title}</h3>
+                  <h3 className=" text-2xl font-bold">{project.title}</h3>
                 </div>
               
-              <p className="text-left ml-2 text-xl">{project.description}</p>
+              <p className="text-left  text-xl">{project.description}</p>
               <div className="mt-4 flex w-full flex-row items-center justify-start gap-2">
               <a
               className=" border border-neutral-800  flex items-center justify-center rounded-lg px-6 py-2 font-bold text-white  transition-colors hover:bg-neutral-800"
@@ -103,7 +103,7 @@ export default function Page() {
               
                
                 <div className="flex w-full flex-row items-center justify-start ">
-                  <h3 className="ml-2 text-2xl font-bold">{project.title}</h3>
+                  <h3 className=" text-2xl font-bold">{project.title}</h3>
                 </div>
               
               

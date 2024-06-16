@@ -448,7 +448,7 @@ export default function Home() {
                 <div className="mt-2 flex w-full flex-row items-center justify-start">
                   
                   <div className="flex flex-row items-center justify-start gap-2">
-                    <h3 className="ml-2 text-2xl font-bold">{project.title}</h3>
+                    <h3 className=" text-2xl font-bold">{project.title}</h3>
                     
                   </div>
                 </div>

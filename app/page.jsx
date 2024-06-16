@@ -249,8 +249,7 @@ export default function Home() {
             <span className="rocket text-3xl">🚀</span>
           </h1>
           <p className="text-md mt-2 text-center lg:mt-4 lg:text-xl 2xl:text-2xl">
-            I&apos;m a full-stack developer with a passion for open-source
-            software and the web.
+          Elevating digital experiences: crafting exceptional Full Stack web magic!
           </p>
         </div>
         <div className="mt-4 flex w-full flex-row items-center justify-center gap-2">

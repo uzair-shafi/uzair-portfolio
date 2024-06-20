@@ -665,9 +665,6 @@ video {
 .mb-\[2\.5rem\] {
   margin-bottom: 2.5rem;
 }
-.ml-2 {
-  margin-left: 0.5rem;
-}
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -688,6 +685,15 @@ video {
 }
 .mt-\[6rem\] {
   margin-top: 6rem;
+}
+.-mb-10 {
+  margin-bottom: -2.5rem;
+}
+.-mb-\[100px\] {
+  margin-bottom: -100px;
+}
+.-mb-\[130px\] {
+  margin-bottom: -130px;
 }
 .flex {
   display: flex;
@@ -804,6 +810,24 @@ video {
 }
 .rounded-xl {
   border-radius: 0.75rem;
+}
+.rounded-2xl {
+  border-radius: 1rem;
+}
+.rounded-\[100px\] {
+  border-radius: 100px;
+}
+.rounded-\[150px\] {
+  border-radius: 150px;
+}
+.rounded-\[50px\] {
+  border-radius: 50px;
+}
+.rounded-\[30px\] {
+  border-radius: 30px;
+}
+.rounded-\[20px\] {
+  border-radius: 20px;
 }
 .border {
   border-width: 1px;
@@ -1306,8 +1330,16 @@ body::after {
 
 @media (min-width: 768px) {
 
+  .md\:-mt-\[50px\] {
+    margin-top: -50px;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:pr-\[100px\] {
+    padding-right: 100px;
   }
 }
 
@@ -1971,9 +2003,6 @@ video {
 .mb-\[2\.5rem\] {
   margin-bottom: 2.5rem;
 }
-.ml-2 {
-  margin-left: 0.5rem;
-}
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -1994,6 +2023,15 @@ video {
 }
 .mt-\[6rem\] {
   margin-top: 6rem;
+}
+.-mb-10 {
+  margin-bottom: -2.5rem;
+}
+.-mb-\[100px\] {
+  margin-bottom: -100px;
+}
+.-mb-\[130px\] {
+  margin-bottom: -130px;
 }
 .flex {
   display: flex;
@@ -2110,6 +2148,24 @@ video {
 }
 .rounded-xl {
   border-radius: 0.75rem;
+}
+.rounded-2xl {
+  border-radius: 1rem;
+}
+.rounded-\[100px\] {
+  border-radius: 100px;
+}
+.rounded-\[150px\] {
+  border-radius: 150px;
+}
+.rounded-\[50px\] {
+  border-radius: 50px;
+}
+.rounded-\[30px\] {
+  border-radius: 30px;
+}
+.rounded-\[20px\] {
+  border-radius: 20px;
 }
 .border {
   border-width: 1px;
@@ -3968,8 +4024,16 @@ video {
 }
 @media (min-width: 768px) {
 
+  .md\:-mt-\[50px\] {
+    margin-top: -50px;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:pr-\[100px\] {
+    padding-right: 100px;
   }
 }
 @media (min-width: 1024px) {

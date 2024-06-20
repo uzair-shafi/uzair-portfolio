@@ -24,50 +24,7 @@ export default function Header() {
   const [currentScreen, setCurrentScreen] = useState("laptop");
   const navItemRefs = useRef([]);
 
-  const handleMouseEnter = (index) => {
-    const { offsetLeft, offsetWidth } = navItemRefs.current[index];
-    setIndicatorStyle({
-      left: offsetLeft - 5,
-      width: offsetWidth + 10,
-      bottom: -3,
-    });
-  };
-
-  const changeColor = (color) => {
-    if (typeof window !== "undefined") {
-      window.localStorage.setItem("theme", color.name.toLowerCase());
-      window.location.reload();
-    }
-  };
-
-  const changeFont = (font) => {
-    if (typeof window !== "undefined") {
-      window.localStorage.setItem("font", font);
-      window.location.reload();
-    }
-  };
-
-  useEffect(() => {
-    if (screensize.width < 640) {
-      setCurrentScreen("mobile");
-      setIndicatorStyle({
-        left: navItemRefs.current[0].offsetLeft - 5,
-        width: navItemRefs.current[0].offsetWidth + 10,
-        bottom: -3,
-      });
-    } else if (screensize.width < 1024) {
-      setCurrentScreen("tablet");
-      setIndicatorStyle({
-        left: navItemRefs.current[0].offsetLeft - 5,
-        width: navItemRefs.current[0].offsetWidth + 10,
-        bottom: -3,
-      });
-    } else if (screensize.width < 1280) {
-      setCurrentScreen("laptop");
-    } else {
-      setCurrentScreen("desktop");
-    }
-  }, [screensize.width]);
+  
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -83,34 +40,7 @@ export default function Header() {
     }
   }, []);
 
-  useEffect(() => {
-    if (currentScreen !== "laptop" || currentScreen !== "desktop") return;
-    if (pathname === "/") {
-      setIndicatorStyle({
-        left: navItemRefs.current[0].offsetLeft - 5,
-        width: navItemRefs.current[0].offsetWidth + 10,
-        bottom: -3,
-      });
-    } else if (pathname === "/about") {
-      setIndicatorStyle({
-        left: navItemRefs.current[1].offsetLeft - 5,
-        width: navItemRefs.current[1].offsetWidth + 10,
-        bottom: -3,
-      });
-    } else if (pathname.includes("/blog")) {
-      setIndicatorStyle({
-        left: navItemRefs.current[2].offsetLeft - 5,
-        width: navItemRefs.current[2].offsetWidth + 10,
-        bottom: -3,
-      });
-    } else if (pathname === "/projects") {
-      setIndicatorStyle({
-        left: navItemRefs.current[3].offsetLeft - 5,
-        width: navItemRefs.current[3].offsetWidth + 10,
-        bottom: -3,
-      });
-    }
-  }, [pathname, currentScreen]);
+  
 
   return (
     <>

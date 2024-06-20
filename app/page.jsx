@@ -253,12 +253,12 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-4 flex w-full flex-row items-center justify-center gap-2">
-        <Link href="/resume.pdf" download>
+        <Link href="/resume.pdf"  target="_blank" rel="noopener noreferrer">
           <button
             className="bg-primary-500 hover:bg-primary-600 flex items-center justify-center rounded-lg px-10 py-2 font-bold text-white shadow-lg transition-colors"
             
           >
-            Download Resume
+          Get My Resume
           </button>
           </Link>
        
@@ -302,7 +302,7 @@ export default function Home() {
               About Me<span className="text-primary-500">.</span>
             </h2>
           </div>
-          <p className="mt-2 text-left text-xl pr-[100px]">
+          <p className="mt-2 text-left text-xl md:pr-[100px]">
           Enthusiastic Full Stack Web Developer with a keen eye for design and a pulse on modern trends and technologies. Also skilled in CMS platforms and passionate about blockchain development, bringing ideas to life with captivating digital experiences!
           </p>
         </div>
@@ -312,7 +312,7 @@ export default function Home() {
             width={256}
             height={256}
             alt="BinaryBlazer"
-            className=" h-64 w-64 rounded-xl border-4  shadow-lg transition-transform duration-50 ease-in-out hover:translate-y-[-4px] hover:transform"
+            className=" h-64 w-64 rounded-[20px]   shadow-lg transition-transform duration-50 ease-in-out hover:translate-y-[-4px] hover:transform"
             draggable="false"
           />
         </div>
@@ -415,7 +415,7 @@ export default function Home() {
           },
         }}
         id="projects"
-        className="mx-auto -mt-[50px] flex min-h-screen w-full flex-col items-start justify-center bg-gradient-to-b from-transparent via-neutral-900/90 to-neutral-900 p-8 lg:p-32"
+        className="mx-auto md:-mt-[50px] flex min-h-screen w-full flex-col items-start justify-center bg-gradient-to-b from-transparent via-neutral-900/90 to-neutral-900 p-8 lg:p-32"
       >
         <div className="flex w-full flex-col items-start justify-center">
           <div className="mb-8 flex w-full flex-col items-start justify-center">
@@ -572,7 +572,7 @@ export default function Home() {
           },
         }}
         id="contact"
-        className="mx-auto flex min-h-screen w-full flex-col items-start justify-center p-8 lg:p-32"
+        className="mx-auto flex -mb-[130px] w-full flex-col items-start justify-center p-8 lg:p-32"
       >
         <div className="mb-10 flex w-full flex-col items-start justify-center">
           <div className="flex flex-row items-center justify-start gap-2">

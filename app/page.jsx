@@ -38,31 +38,30 @@ export default function Home() {
   const controls2 = useAnimation();
   const controls3 = useAnimation();
   const controls4 = useAnimation();
+  const controls5 = useAnimation();
 
   const aboutControls = useAnimation();
 
   const projectsControls = useAnimation();
+  const skillsControls = useAnimation();
   const testimonialsControls = useAnimation();
   const contactControls = useAnimation();
 
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
-  const [addTestimonial, setAddTestimonial] = useState(false);
-  const [email, setEmail] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [message, setMessage] = useState("");
-  const [error, setError] = useState(null);
-  const [blacklistedWords, setBlacklistedWords] = useState([]);
+  
 
   const scrollContainerRef = useRef(null);
   const border1Ref = useRef();
   const border2Ref = useRef();
   const border3Ref = useRef();
   const border4Ref = useRef();
+  const border5Ref = useRef();
+
   const aboutRef = useRef();
   const projectsRef = useRef();
+  const skillsRef = useRef();
   const testimonialsRef = useRef();
   const contactRef = useRef();
 
@@ -98,6 +97,7 @@ export default function Home() {
       { ref: border2Ref, controls: controls2 },
       { ref: border3Ref, controls: controls3 },
       { ref: border4Ref, controls: controls4 },
+      { ref: border5Ref, controls: controls5 },
     ];
     let currentBorderIndex = 0;
 
@@ -153,6 +153,27 @@ export default function Home() {
       }
     };
   }, [aboutControls]);
+
+  useEffect(() => {
+    const skillsObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          skillsControls.start("visible");
+        }
+      },
+      { threshold: 0.5 },
+    );
+
+    if (skillsRef.current) {
+      skillsObserver.observe(skillsRef.current);
+    }
+
+    return () => {
+      if (skillsRef.current) {
+        skillsObserver.unobserve(skillsRef.current);
+      }
+    };
+  }, [skillsControls]);
 
   useEffect(() => {
     const projectsObserver = new IntersectionObserver(
@@ -253,7 +274,7 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-4 flex w-full flex-row items-center justify-center gap-2">
-        <Link href="/resume.pdf"  target="_blank" rel="noopener noreferrer">
+        <Link href="/uzair-resume.pdf"  target="_blank" rel="noopener noreferrer">
           <button
             className="bg-primary-500 hover:bg-primary-600 flex items-center justify-center rounded-lg px-10 py-2 font-bold text-white shadow-lg transition-colors"
             
@@ -390,9 +411,9 @@ export default function Home() {
     </motion.main>
 
     <motion.div
-        ref={border4Ref}
+        ref={border3Ref}
         initial="hidden"
-        animate={controls4}
+        animate={controls3}
         variants={{
           hidden: { width: 0 },
           visible: { width: "100%", transition: { duration: 0.8, delay: 0 } },
@@ -478,9 +499,9 @@ export default function Home() {
       </motion.section>
 
       <motion.div
-        ref={border3Ref}
+        ref={border4Ref}
         initial="hidden"
-        animate={controls3}
+        animate={controls4}
         variants={{
           hidden: { width: 0 },
           visible: { width: "100%", transition: { duration: 0.8, delay: 0 } },
@@ -547,9 +568,9 @@ export default function Home() {
       </motion.section>
 
       <motion.div
-        ref={border4Ref}
+        ref={border5Ref}
         initial="hidden"
-        animate={controls4}
+        animate={controls5}
         variants={{
           hidden: { width: 0 },
           visible: { width: "100%", transition: { duration: 0.8, delay: 0 } },

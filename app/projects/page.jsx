@@ -32,7 +32,7 @@ export default function Page() {
             Here are some of the projects I&apos;ve been working on recently.
           </p>
         </div>
-        <div className="grid w-full grid-cols-1 items-start justify-center gap-10 lg:grid-cols-2">
+        <div className="grid w-full grid-cols-1 items-start mt-8 justify-center gap-10 lg:grid-cols-2">
           {projects.map((project, index) => (
             <div
               key={index}

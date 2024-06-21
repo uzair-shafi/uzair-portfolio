@@ -686,6 +686,9 @@ video {
 .mt-\[6rem\] {
   margin-top: 6rem;
 }
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
 .flex {
   display: flex;
 }
@@ -1990,6 +1993,9 @@ video {
 }
 .mt-\[6rem\] {
   margin-top: 6rem;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 .flex {
   display: flex;

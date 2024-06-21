@@ -57,7 +57,7 @@ export const projects = [
   {
     title: "Hilkink Landing Page",
     description:
-      "A Fully Responsive Modern UI/UX Landing Page crafted using Next.js 13, typescript and Tailwind CSS",
+      "A Fully Responsive Modern UI/UX Landing Page developed using Next.js, typescript and Tailwind CSS",
     link: "https://travel-website-landing-page-beta.vercel.app/",
     status: {
       inProgress: true,

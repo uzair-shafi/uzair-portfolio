@@ -310,7 +310,7 @@ export const wpprojects = [
   {
     title: "Invicta Counselling",
     
-    link: "https://invicta-counseling.com/",
+    link: "https://invicta-counseling.org/",
    
     
     image: "/img/projects/invicta.png",

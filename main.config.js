@@ -39,6 +39,21 @@ export const items = [
 
 export const projects = [
   {
+    title: "Nexjs Ecommerce App",
+    description:
+      "A modern eCommerce platform built with Next.js, leveraging Sanity for dynamic content management and Stripe for secure, seamless payment processing.",
+    link: "https://ecommerce-theta-wine.vercel.app/",
+    status: {
+      inProgress: true,
+      complete: false,
+      paused: false,
+      cancelled: false,
+    },
+    technologies: ["NextJS", "Sani", "Stripe"],
+    image: "/img/projects/ecom.png",
+    banner: "/img/projects/ecom.png",
+  },
+  {
     title: "Ana Blogs",
     description:
       "A complete blog website with Light/Dark Mode, Google Sign In, Text Editor, categories based pages, comments functionality.",
@@ -234,7 +249,7 @@ export const projects = [
     title: "3D Portfolio Website",
     description:
       "mmersive 3D portfolio website crafted in React and powered by Three.js and Framer Motion, boasting a sleek modern design.",
-    link: "https://dark-themed-react-business-website.vercel.app/",
+    link: "https://3-d-portfolio-liart.vercel.app/",
     status: {
       inProgress: true,
       complete: false,

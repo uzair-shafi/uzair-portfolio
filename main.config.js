@@ -68,6 +68,27 @@ export const projects = [
     image: "/img/projects/ana.png",
     banner: "/img/projects/ana.png",
   },
+  {
+    title: "trackly Landing Page",
+    description:
+      "A sleek landing page built with Next.js, featuring smooth, interactive animations powered by Framer Motion for a modern and engaging user experience.",
+    link: "https://trackly-landing-page.vercel.app/",
+    status: {
+      inProgress: true,
+      complete: false,
+      paused: false,
+      cancelled: false,
+    },
+    technologies: [
+      "NextJS",
+      "TypeScript",
+      "Framer Motion",
+      
+      
+    ],
+    image: "/img/projects/rack.png",
+    banner: "/img/projects/rack.png",
+  },
 
   {
     title: "Hilkink Landing Page",

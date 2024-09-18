@@ -26,20 +26,16 @@ export const items = [
     name: "About",
     href: "/about",
   },
- 
+
   {
     name: "Projects",
     href: "/projects",
   },
 ];
 
-
-
-
-
 export const projects = [
   {
-    title: "Nexjs Ecommerce App",
+    title: "Nexjs Ecommerce App (in working)",
     description:
       "A modern eCommerce platform built with Next.js, leveraging Sanity for dynamic content management and Stripe for secure, seamless payment processing.",
     link: "https://ecommerce-theta-wine.vercel.app/",
@@ -79,13 +75,7 @@ export const projects = [
       paused: false,
       cancelled: false,
     },
-    technologies: [
-      "NextJS",
-      "TypeScript",
-      "Framer Motion",
-      
-      
-    ],
+    technologies: ["NextJS", "TypeScript", "Framer Motion"],
     image: "/img/projects/rack.png",
     banner: "/img/projects/rack.png",
   },
@@ -101,13 +91,7 @@ export const projects = [
       paused: false,
       cancelled: false,
     },
-    technologies: [
-      "NextJS",
-      "TypeScript",
-      "Tailwindcss",
-      
-      
-    ],
+    technologies: ["NextJS", "TypeScript", "Tailwindcss"],
     image: "/img/projects/travel.png",
     banner: "/img/projects/travel.png",
   },
@@ -122,18 +106,11 @@ export const projects = [
       paused: false,
       cancelled: false,
     },
-    technologies: [
-      "ReactJS",
-      "Solidity",
-      "Tailwindcss",
-      "EtherJS",
-      
-    ],
+    technologies: ["ReactJS", "Solidity", "Tailwindcss", "EtherJS"],
     image: "/img/projects/crowd.png",
     banner: "/img/projects/crowd.png",
   },
-  
- 
+
   {
     title: "Nust Orientation",
     description:
@@ -145,13 +122,7 @@ export const projects = [
       paused: false,
       cancelled: false,
     },
-    technologies: [
-      "NextJS",
-      "Framer Motion",
-      "Tailwindcss",
-      
-      
-    ],
+    technologies: ["NextJS", "Framer Motion", "Tailwindcss"],
     image: "/img/projects/on.png",
     banner: "/img/projects/on.png",
   },
@@ -166,15 +137,7 @@ export const projects = [
       paused: false,
       cancelled: false,
     },
-    technologies: [
-      "NextJS",
-      "FramerMotion",
-      
-      
-      "Tailwindcss",
-      
-      
-    ],
+    technologies: ["NextJS", "FramerMotion", "Tailwindcss"],
     image: "/img/projects/brain.png",
     banner: "/img/projects/brain.png",
   },
@@ -189,15 +152,7 @@ export const projects = [
       paused: false,
       cancelled: false,
     },
-    technologies: [
-      "NextJS",
-      "NodeJS",
-      "Next-Auth",
-      
-      "Tailwindcss",
-      
-      
-    ],
+    technologies: ["NextJS", "NodeJS", "Next-Auth", "Tailwindcss"],
     image: "/img/projects/blog.png",
     banner: "/img/projects/blog.png",
   },
@@ -212,17 +167,11 @@ export const projects = [
       paused: false,
       cancelled: false,
     },
-    technologies: [
-      "ReactJS",
-      "Solidity",
-      "Tailwindcss",
-      "EtherJS",
-      
-    ],
+    technologies: ["ReactJS", "Solidity", "Tailwindcss", "EtherJS"],
     image: "/img/projects/krypt.png",
     banner: "/img/projects/krypt.png",
   },
-  
+
   {
     title: "Metaverse Landing Page",
     description:
@@ -234,13 +183,7 @@ export const projects = [
       paused: false,
       cancelled: false,
     },
-    technologies: [
-      "NextJS",
-      "FramerMotion",
-      "Tailwindcss",
-      
-      
-    ],
+    technologies: ["NextJS", "FramerMotion", "Tailwindcss"],
     image: "/img/projects/meta.png",
     banner: "/img/projects/meta.png",
   },
@@ -255,13 +198,7 @@ export const projects = [
       paused: false,
       cancelled: false,
     },
-    technologies: [
-      "ReactJS",
-      
-      "Tailwindcss",
-      
-      
-    ],
+    technologies: ["ReactJS", "Tailwindcss"],
     image: "/img/projects/hoo.png",
     banner: "/img/projects/hoo.png",
   },
@@ -277,93 +214,72 @@ export const projects = [
       paused: false,
       cancelled: false,
     },
-    technologies: [
-      "ReactJS",
-      "ThreeJS",
-      "Framer Motion",
-      "Tailwindcss",
-      
-      
-    ],
+    technologies: ["ReactJS", "ThreeJS", "Framer Motion", "Tailwindcss"],
     image: "/img/projects/uz.png",
     banner: "/img/projects/uz.png",
   },
- 
-
- 
- 
 ];
 
 export const wpprojects = [
   {
     title: "Prisma Assist",
-    
+
     link: "https://prismaassist.com/",
-   
-    
+
     image: "/img/projects/prisma.png",
     banner: "/img/projects/prisma.png",
   },
   {
     title: "Dalton Litz",
-    
+
     link: "https://daltonlitz.com/",
-   
-    
+
     image: "/img/projects/dalton.png",
     banner: "/img/projects/dalton.png",
   },
-  
+
   {
     title: "Essence Tech",
-    
+
     link: "https://the-essencetech.com/",
-   
-    
+
     image: "/img/projects/tech.png",
     banner: "/img/projects/tech.png",
   },
-  
+
   {
     title: "Vetrox Pharma",
-    
+
     link: "https://vetroxpharma.com/",
-   
-    
+
     image: "/img/projects/vetrox.png",
     banner: "/img/projects/vetrox.png",
   },
   {
     title: "Axesell",
-    
+
     link: "https://axesell.co/",
-   
-    
+
     image: "/img/projects/axesell.png",
     banner: "/img/projects/axesell.png",
   },
 
   {
     title: "Invicta Counselling",
-    
+
     link: "https://invicta-counseling.org/",
-   
-    
+
     image: "/img/projects/invicta.png",
     banner: "/img/projects/invicta.png",
   },
   {
     title: "Advent Assets",
-    
+
     link: "https://adventassets.us/",
-   
-    
+
     image: "/img/projects/advent.png",
     banner: "/img/projects/advent.png",
   },
-
-  
- 
 ];
 
 export const testimonials = [
@@ -409,16 +325,12 @@ export const testimonials = [
     message:
       "Uzair's technical skills and dedication were a great asset to our project. We couldn't have asked for a better developer.",
   },
-  
 ];
 
 export const technologies = [
   {
     name: "FrontEnd",
     technologies: [
-    
-     
-    
       {
         name: "HTML",
         icon: "/svg/html.svg",
@@ -435,8 +347,7 @@ export const technologies = [
         name: "JavaScript",
         icon: "/svg/js.svg",
       },
-      
-      
+
       {
         name: "React Js",
         icon: "/svg/react.svg",
@@ -465,13 +376,13 @@ export const technologies = [
         name: "Elementor Pro",
         icon: "/svg/elementor.svg",
       },
-      
-      
-      
-     
+      {
+        name: "Bubble io",
+        icon: "/svg/bubble.svg",
+      },
     ],
   },
-  
+
   {
     name: "Backend",
     technologies: [
@@ -499,12 +410,13 @@ export const technologies = [
         name: "Elementor Pro",
         icon: "/svg/elementor.svg",
       },
-      
-      
+      {
+        name: "Bubble io",
+        icon: "/svg/bubble.svg",
+      },
     ],
   },
- 
- 
+
   {
     name: "Web 3.0",
     technologies: [
@@ -528,11 +440,9 @@ export const technologies = [
         name: "Meta Mask",
         icon: "/svg/meta.svg",
       },
-     
-      
     ],
   },
-  
+
   {
     name: "Other",
     technologies: [
@@ -560,8 +470,6 @@ export const technologies = [
         name: "Adobe Illustrator",
         icon: "/svg/illustrator.svg",
       },
-      
     ],
   },
 ];
-     

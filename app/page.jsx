@@ -1,17 +1,16 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import Link from 'next/link';
 import Image from "next/image";
-import { technologies } from "@/main.config";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { projects, testimonials } from "@/main.config";
+import { projects, technologies, testimonials } from "@/main.config";
 import { motion, useAnimation } from "framer-motion";
 
 export default function Home() {
   const router = useRouter();
 
-   const [currentTab, setCurrentTab] = React.useState(technologies[0]);
+  const [currentTab, setCurrentTab] = React.useState(technologies[0]);
   const [shouldAnimate, setShouldAnimate] = React.useState(true);
 
   const tabs = technologies.map((tab) => (
@@ -21,7 +20,7 @@ export default function Home() {
       className={`${
         currentTab.name === tab.name
           ? "bg-primary-500 text-neutral-100"
-          : "text-neutral-400 bg-neutral-800"
+          : "bg-neutral-800 text-neutral-400"
       } mb-4 rounded-lg px-4 py-2`}
     >
       {tab.name}
@@ -50,7 +49,6 @@ export default function Home() {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
-  
 
   const scrollContainerRef = useRef(null);
   const border1Ref = useRef();
@@ -88,8 +86,6 @@ export default function Home() {
       scrollContainerRef.current.scrollLeft = scrollLeft - walk;
     }
   };
-
- 
 
   useEffect(() => {
     const borders = [
@@ -256,12 +252,9 @@ export default function Home() {
               Websites
             </span>
             ,{" "}
+            <span className="from-primary-400 to-primary-500 bg-gradient-to-r bg-clip-text text-transparent"></span>{" "}
             <span className="from-primary-400 to-primary-500 bg-gradient-to-r bg-clip-text text-transparent">
-              
-            </span>
-            {" "}
-            <span className="from-primary-400 to-primary-500 bg-gradient-to-r bg-clip-text text-transparent">
-              Smart Contracts
+              Web Applications
             </span>{" "}
             and{" "}
             <span className="from-primary-400 to-primary-500 bg-gradient-to-r bg-clip-text text-transparent">
@@ -270,19 +263,20 @@ export default function Home() {
             <span className="rocket text-3xl">🚀</span>
           </h1>
           <p className="text-md mt-2 text-center lg:mt-4 lg:text-xl 2xl:text-2xl">
-          Elevating digital experiences: crafting exceptional Full Stack web magic!
+            Elevating digital experiences: crafting exceptional Full Stack web
+            magic!
           </p>
         </div>
         <div className="mt-4 flex w-full flex-row items-center justify-center gap-2">
-        <Link href="/uzair-resume.pdf"  target="_blank" rel="noopener noreferrer">
-          <button
-            className="bg-primary-500 hover:bg-primary-600 flex items-center justify-center rounded-lg px-10 py-2 font-bold text-white shadow-lg transition-colors"
-            
+          <Link
+            href="/uzair-resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-          Get My Resume
-          </button>
+            <button className="bg-primary-500 hover:bg-primary-600 flex items-center justify-center rounded-lg px-10 py-2 font-bold text-white shadow-lg transition-colors">
+              Get My Resume
+            </button>
           </Link>
-       
         </div>
       </motion.main>
 
@@ -316,15 +310,15 @@ export default function Home() {
       >
         <div className="flex w-full flex-col items-start justify-center lg:w-2/3">
           <div className="flex flex-row items-center justify-start gap-2">
-            
-            
-            
             <h2 className="text-center text-4xl font-bold">
               About Me<span className="text-primary-500">.</span>
             </h2>
           </div>
           <p className="mt-2 text-left text-xl md:pr-[100px]">
-          Enthusiastic Full Stack Web Developer with a keen eye for design and a pulse on modern trends and technologies. Also skilled in CMS platforms and passionate about blockchain development, bringing ideas to life with captivating digital experiences!
+            Enthusiastic Full Stack Web Developer with a keen eye for design and
+            a pulse on modern trends and technologies. Also skilled in CMS
+            platforms and passionate about blockchain development, bringing
+            ideas to life with captivating digital experiences!
           </p>
         </div>
         <div className="mt-10 flex w-full flex-row items-center justify-center gap-2 lg:mt-10 lg:w-1/3 lg:justify-end">
@@ -333,7 +327,7 @@ export default function Home() {
             width={256}
             height={256}
             alt="BinaryBlazer"
-            className=" h-64 w-64 rounded-[20px]   shadow-lg transition-transform duration-50 ease-in-out hover:translate-y-[-4px] hover:transform"
+            className=" duration-50 h-64 w-64   rounded-[20px] shadow-lg transition-transform ease-in-out hover:translate-y-[-4px] hover:transform"
             draggable="false"
           />
         </div>
@@ -352,65 +346,58 @@ export default function Home() {
         <div className="mb-4 mt-4 w-full border-t border-neutral-700" />
       </motion.div>
 
-
-
       <motion.main
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 10 }}
-      transition={{ duration: 0.5 }}
-      className="mx-auto flex min-h-screen w-full flex-col items-center justify-center p-8 lg:mt-0 lg:p-32"
-    >
-      
-      <div className=" flex w-full flex-col items-start justify-center">
-        <div className="flex flex-row items-center justify-start gap-2">
-       
-        
-          <h2 className="text-center text-4xl font-bold">
-            Technologies I Use<span className="text-primary-500">.</span>
-          </h2>
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 10 }}
+        transition={{ duration: 0.5 }}
+        className="mx-auto flex min-h-screen w-full flex-col items-center justify-center p-8 lg:mt-0 lg:p-32"
+      >
+        <div className=" flex w-full flex-col items-start justify-center">
+          <div className="flex flex-row items-center justify-start gap-2">
+            <h2 className="text-center text-4xl font-bold">
+              Technologies I Use<span className="text-primary-500">.</span>
+            </h2>
+          </div>
         </div>
-       
-      </div>
-      <div className="mt-8 w-full">
-        <div className="flex flex-row items-center justify-start gap-2 overflow-x-auto">
-          {tabs}
+        <div className="mt-8 w-full">
+          <div className="flex flex-row items-center justify-start gap-2 overflow-x-auto">
+            {tabs}
+          </div>
         </div>
-      </div>
-      <div className="mt-8 flex w-full flex-col items-start justify-center">
-      
-        <motion.div
-          className=" grid  w-full grid-cols-2 items-center justify-start gap-2 md:grid-cols-3 lg:grid-cols-4"
-          transition={{ duration: 0.2, staggerChildren: 0.15 }}
-        >
-          {currentTab.technologies.map((tech, index) => (
-            <motion.div
-              key={tech.name}
-              className="flex w-full transform flex-row items-center justify-start gap-2 rounded-lg border border-neutral-800 p-2 text-center transition-transform duration-150 ease-in-out hover:translate-y-[-4px]"
-              initial={shouldAnimate ? { opacity: 0, y: 10 } : {}}
-              animate={shouldAnimate ? { opacity: 1, y: 0 } : {}}
-              exit={shouldAnimate ? { opacity: 0, y: 10 } : {}}
-              transition={
-                shouldAnimate ? { duration: 0.2, delay: index * 0.1 } : {}
-              }
-            >
-              <div className="rounded-md bg-neutral-900 p-2">
-                <Image
-                  src={tech.icon}
-                  alt={tech.name}
-                  className="h-6 w-6"
-                  width={24}
-                  height={24}
-                />
-              </div>
-              {tech.name}
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
-    </motion.main>
+        <div className="mt-8 flex w-full flex-col items-start justify-center">
+          <motion.div
+            className=" grid  w-full grid-cols-2 items-center justify-start gap-2 md:grid-cols-3 lg:grid-cols-4"
+            transition={{ duration: 0.2, staggerChildren: 0.15 }}
+          >
+            {currentTab.technologies.map((tech, index) => (
+              <motion.div
+                key={tech.name}
+                className="flex w-full transform flex-row items-center justify-start gap-2 rounded-lg border border-neutral-800 p-2 text-center transition-transform duration-150 ease-in-out hover:translate-y-[-4px]"
+                initial={shouldAnimate ? { opacity: 0, y: 10 } : {}}
+                animate={shouldAnimate ? { opacity: 1, y: 0 } : {}}
+                exit={shouldAnimate ? { opacity: 0, y: 10 } : {}}
+                transition={
+                  shouldAnimate ? { duration: 0.2, delay: index * 0.1 } : {}
+                }
+              >
+                <div className="rounded-md bg-neutral-900 p-2">
+                  <Image
+                    src={tech.icon}
+                    alt={tech.name}
+                    className="h-6 w-6"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+                {tech.name}
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </motion.main>
 
-    <motion.div
+      <motion.div
         ref={border3Ref}
         initial="hidden"
         animate={controls3}
@@ -436,13 +423,11 @@ export default function Home() {
           },
         }}
         id="projects"
-        className="mx-auto md:-mt-[50px] flex min-h-screen w-full flex-col items-start justify-center bg-gradient-to-b from-transparent via-neutral-900/90 to-neutral-900 p-8 lg:p-32"
+        className="mx-auto flex min-h-screen w-full flex-col items-start justify-center bg-gradient-to-b from-transparent via-neutral-900/90 to-neutral-900 p-8 md:-mt-[50px] lg:p-32"
       >
         <div className="flex w-full flex-col items-start justify-center">
           <div className="mb-8 flex w-full flex-col items-start justify-center">
             <div className="flex flex-row items-center justify-start gap-2">
-             
-             
               <h2 className="text-4xl font-bold">
                 Projects<span className="text-primary-500">.</span>
               </h2>
@@ -467,10 +452,8 @@ export default function Home() {
                   draggable="false"
                 />
                 <div className="mt-2 flex w-full flex-row items-center justify-start">
-                  
                   <div className="flex flex-row items-center justify-start gap-2">
                     <h3 className=" text-2xl font-bold">{project.title}</h3>
-                    
                   </div>
                 </div>
                 <p className="text-left text-xl">{project.description}</p>
@@ -528,7 +511,6 @@ export default function Home() {
       >
         <div className="mb-8 flex w-full flex-col items-start justify-center">
           <div className="flex flex-row items-center justify-start gap-2">
-            
             <h2 className="text-4xl font-bold">
               Testimonials<span className="text-primary-500">.</span>
             </h2>
@@ -563,7 +545,6 @@ export default function Home() {
               <p className="text-left text-lg">{testimonial.message}</p>
             </div>
           ))}
-         
         </div>
       </motion.section>
 
@@ -593,11 +574,10 @@ export default function Home() {
           },
         }}
         id="contact"
-        className="mx-auto flex -mb-[130px] w-full flex-col items-start justify-center p-8 lg:p-32"
+        className="mx-auto -mb-[130px] flex w-full flex-col items-start justify-center p-8 lg:p-32"
       >
         <div className="mb-10 flex w-full flex-col items-start justify-center">
           <div className="flex flex-row items-center justify-start gap-2">
-           
             <h2 className="text-4xl font-bold">
               Contact Me<span className="text-primary-500">.</span>
             </h2>
@@ -609,7 +589,7 @@ export default function Home() {
         <div className="flex w-full flex-row items-center justify-center gap-10 lg:flex-row lg:items-start lg:justify-start">
           <div className="flex w-full flex-row items-start justify-start gap-4 lg:w-1/2">
             <button
-              className="flex w-full items-center justify-start gap-2 rounded-lg border border-neutral-800 px-6 py-4 hover:bg-neutral-800 font-bold text-white  transition-colors "
+              className="flex w-full items-center justify-start gap-2 rounded-lg border border-neutral-800 px-6 py-4 font-bold text-white transition-colors  hover:bg-neutral-800 "
               onClick={() => router.push("mailto:uzairshaffi654@gmail.com")}
             >
               <svg
@@ -630,15 +610,23 @@ export default function Home() {
             </button>
             <button
               className="flex w-full items-center justify-start gap-2 rounded-lg border border-neutral-800 px-6 py-4 font-bold text-white  transition-colors hover:bg-neutral-800"
-              onClick={() => router.push("https://www.linkedin.com/in/uzair-shafi/")}
+              onClick={() =>
+                router.push("https://www.linkedin.com/in/uzair-shafi/")
+              }
             >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-          </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-linkedin"
+                viewBox="0 0 16 16"
+              >
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+              </svg>
               Linked In
             </button>
           </div>
-         
         </div>
       </motion.section>
     </>

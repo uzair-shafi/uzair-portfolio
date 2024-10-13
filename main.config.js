@@ -34,6 +34,7 @@ export const items = [
 ];
 
 export const projects = [
+
   {
     title: "Nexjs Ecommerce App (in working)",
     description:
@@ -49,6 +50,38 @@ export const projects = [
     image: "/img/projects/ecom.png",
     banner: "/img/projects/ecom.png",
   },
+
+  {
+    title: "Trackly app",
+    description:
+      "Create reminders with multiple tasks, mark them complete, edit, or delete as needed. Reminders auto-complete when all tasks are done. Secure user signup and login keep your tasks accessible anytime.",
+    link: "https://trackly-app-72ko.vercel.app/",
+    status: {
+      inProgress: true,
+      complete: false,
+      paused: false,
+      cancelled: false,
+    },
+    technologies: ["MEVN stack"],
+    image: "/img/projects/trackly.png",
+    banner: "/img/projects/trackly.png",
+  },
+  {
+    title: "Pdf Merger",
+    description:
+      "Pdf merger application build on nextjs harnessing the power of pdfjs. users can merge multiple pdfs, rotate and preview the pdf separate pages.",
+    link: "https://pdf-merger-nextjs.vercel.app/",
+    status: {
+      inProgress: true,
+      complete: false,
+      paused: false,
+      cancelled: false,
+    },
+    technologies: ["NextJS", "PDFjs"],
+    image: "/img/projects/pdf.png",
+    banner: "/img/projects/pdf.png",
+  },
+ 
   {
     title: "Ana Blogs",
     description:
@@ -417,31 +450,7 @@ export const technologies = [
     ],
   },
 
-  {
-    name: "Web 3.0",
-    technologies: [
-      {
-        name: "Solidity",
-        icon: "/svg/solidity.svg",
-      },
-      {
-        name: "Ethers Js",
-        icon: "/svg/ether.svg",
-      },
-      {
-        name: "HardHat",
-        icon: "/svg/hard.svg",
-      },
-      {
-        name: "Ethereum",
-        icon: "/svg/eth.svg",
-      },
-      {
-        name: "Meta Mask",
-        icon: "/svg/meta.svg",
-      },
-    ],
-  },
+ 
 
   {
     name: "Other",

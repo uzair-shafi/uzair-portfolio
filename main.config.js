@@ -34,7 +34,6 @@ export const items = [
 ];
 
 export const projects = [
-
   {
     title: "Nexjs Ecommerce App (in working)",
     description:
@@ -81,7 +80,7 @@ export const projects = [
     image: "/img/projects/pdf.png",
     banner: "/img/projects/pdf.png",
   },
- 
+
   {
     title: "Ana Blogs",
     description:
@@ -390,6 +389,10 @@ export const technologies = [
         icon: "/svg/next.svg",
       },
       {
+        name: "Vue Js",
+        icon: "/svg/vue.svg",
+      },
+      {
         name: "TypeScript",
         icon: "/svg/ts.svg",
       },
@@ -449,8 +452,6 @@ export const technologies = [
       },
     ],
   },
-
- 
 
   {
     name: "Other",

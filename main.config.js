@@ -256,7 +256,7 @@ export const wpprojects = [
   {
     title: "Prisma Assist",
 
-    link: "https://prismaassist.com/",
+    link: "https://prismaassist.com/about-us/",
 
     image: "/img/projects/prisma.png",
     banner: "/img/projects/prisma.png",

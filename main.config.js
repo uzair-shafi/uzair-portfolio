@@ -256,7 +256,7 @@ export const wpprojects = [
   {
     title: "Prisma Assist",
 
-    link: "https://prismaassist.com/about-us/",
+    link: "https://prismaassist.com/",
 
     image: "/img/projects/prisma.png",
     banner: "/img/projects/prisma.png",
@@ -437,14 +437,6 @@ export const technologies = [
       {
         name: "Mongo Db",
         icon: "/svg/db.svg",
-      },
-      {
-        name: "SQL",
-        icon: "/svg/sql.svg",
-      },
-      {
-        name: "Postgrese",
-        icon: "/svg/postgrese.svg",
       },
       {
         name: "Wordpress",

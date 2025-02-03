@@ -9,6 +9,10 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function Page() {
   const router = useRouter();
 
+ 
+ 
+
+
   return (
     <>
       <motion.main
@@ -32,19 +36,22 @@ export default function Page() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="flex h-full w-full flex-col items-center justify-start gap-4 rounded-lg border border-neutral-800 p-4 "
+              className="flex h-full w-full flex-col items-center justify-center gap-4 rounded-lg border border-neutral-800 p-4 "
             >
               <Image
                 src={project.banner}
                 alt={project.title}
                 width={1920}
                 height={1080}
-                className="h-[350px] w-full rounded-lg object-cover "
+                className="h-[220px] w-[500px] rounded-lg object-cover "
                 draggable="false"
               />
+              
+               
                 <div className="flex w-full flex-row items-center justify-start ">
                   <h3 className=" text-2xl font-bold">{project.title}</h3>
                 </div>
+              
               <p className="text-left  text-xl">{project.description}</p>
               <div className="mt-4 flex w-full flex-row items-center justify-start gap-2">
               <a
@@ -83,20 +90,23 @@ export default function Page() {
           {wpprojects.map((project, index) => (
             <div
               key={index}
-              className="flex h-full w-full flex-col items-center justify-start gap-4 rounded-lg border border-neutral-800 p-4 "
+              className="flex h-full w-full flex-col items-center justify-center gap-4 rounded-lg border border-neutral-800 p-4 "
             >
               <Image
                 src={project.banner}
                 alt={project.title}
                 width={1920}
                 height={1080}
-                className="h-[350px] w-full rounded-lg object-cover "
+                className="h-[220px] w-[500px] rounded-lg object-cover "
                 draggable="false"
               />
-
+              
+               
                 <div className="flex w-full flex-row items-center justify-start ">
                   <h3 className=" text-2xl font-bold">{project.title}</h3>
                 </div>
+              
+              
               <div className="mt-4 flex w-full flex-row items-center justify-start gap-2">
               <a
               className=" border border-neutral-800  flex items-center justify-center rounded-lg px-6 py-2 font-bold text-white  transition-colors hover:bg-neutral-800"

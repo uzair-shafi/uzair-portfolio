@@ -315,10 +315,15 @@ export default function Home() {
             </h2>
           </div>
           <p className="mt-2 text-left text-xl md:pr-[100px]">
-            Enthusiastic Full Stack Web Developer with a keen eye for design and
-            a pulse on modern trends and technologies. Also skilled in CMS
-            platforms and passionate about blockchain development, bringing
-            ideas to life with captivating digital experiences!
+            Passionate Full Stack Web Engineer | Blending creativity and
+            technology to build seamless, high-performing web applications that
+            excel in both design and functionality. With a solid foundation in
+            modern frameworks and tools, I specialize in delivering dynamic,
+            user-centric web experiences.<br></br><br></br> Whether it's designing visually
+            striking interfaces or crafting powerful backend solutions, I bring
+            adaptability, innovation, and a keen eye for detail to every
+            project. From startups to personal ventures, my work reflects a deep
+            commitment to pushing the boundaries.
           </p>
         </div>
         <div className="mt-10 flex w-full flex-row items-center justify-center gap-2 lg:mt-10 lg:w-1/3 lg:justify-end">

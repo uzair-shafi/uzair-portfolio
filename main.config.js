@@ -435,6 +435,14 @@ export const technologies = [
         icon: "/svg/prisma.svg",
       },
       {
+        name: "SQL",
+        icon: "/svg/sql.svg",
+      },
+      {
+        name: "Postgrese",
+        icon: "/svg/postgrese.svg",
+      },
+      {
         name: "Mongo Db",
         icon: "/svg/db.svg",
       },

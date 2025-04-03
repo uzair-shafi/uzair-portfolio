@@ -37,7 +37,7 @@ export const projects = [
   {
     title: "Nexjs Ecommerce App (in working)",
     description:
-      "A modern eCommerce platform built with Next.js, leveraging Sanity for dynamic content management and Stripe for secure, seamless payment processing.",
+      "A feature-rich eCommerce solution built with Next.js, integrating Sanity for dynamic content management and Stripe for secure, seamless payment processing. It offers a fast, scalable shopping experience with a user-friendly interface, optimized performance, and a flexible CMS for easy product and content updates.",
     link: "https://ecommerce-theta-wine.vercel.app/",
     status: {
       inProgress: true,
@@ -52,7 +52,7 @@ export const projects = [
   {
     title: "Cuentto - Social App (in working)",
     description:
-      "A modern Social platform for writters community, where they can post cuenttos, like, comment, share, save other's cuenttos. Can follow other people, can make groups with their specific followers and share cuenttos only to that group. Users can add background music with their cuenttos. App contains live notifications with socket.io and secure authentication with jwt.",
+      "A platform where users can share Cuenttos with music, follow/unfollow others, create private groups, react and comment with nested replies, save Cuenttos, and receive real-time notifications. Built with Node.js, Express, Prisma, PostgreSQL, Next.js, TypeScript, and Socket.io for a seamless and engaging experience.",
     link: "https://frontend.cuentto.com/",
     status: {
       inProgress: true,

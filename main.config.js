@@ -49,21 +49,35 @@ export const projects = [
     image: "/img/projects/ecom.png",
     banner: "/img/projects/ecom.png",
   },
-
   {
-    title: "Trackly app",
+    title: "Cuentto - Social App (in working)",
     description:
-      "Create reminders with multiple tasks, mark them complete, edit, or delete as needed. Reminders auto-complete when all tasks are done. Secure user signup and login keep your tasks accessible anytime.",
-    link: "https://trackly-app-72ko.vercel.app/",
+      "A modern Social platform for writters community, where they can post cuenttos, like, comment, share, save other's cuenttos. Can follow other people, can make groups with their specific followers and share cuenttos only to that group. Users can add background music with their cuenttos. App contains live notifications with socket.io and secure authentication with jwt.",
+    link: "https://frontend.cuentto.com/",
     status: {
       inProgress: true,
       complete: false,
       paused: false,
       cancelled: false,
     },
-    technologies: ["MEVN stack"],
-    image: "/img/projects/trackly.png",
-    banner: "/img/projects/trackly.png",
+    technologies: ["NextJS", "Sani", "Stripe"],
+    image: "/img/projects/cuentto.png",
+    banner: "/img/projects/cuentto.png",
+  },
+  {
+    title: "Kubic Docs",
+    description:
+      "Blockchain-powered document storage system with an integrated editor, utilizing IPFS for decentralized file storage and Ethereum smart contracts to ensure data integrity and transaction security.",
+    link: "https://kubicdocs.vercel.app/",
+    status: {
+      inProgress: true,
+      complete: false,
+      paused: false,
+      cancelled: false,
+    },
+    technologies: ["ReactJS", "Tailwindcss"],
+    image: "/img/projects/kubic.png",
+    banner: "/img/projects/kubic.png",
   },
   {
     title: "Pdf Merger",
@@ -80,6 +94,22 @@ export const projects = [
     image: "/img/projects/pdf.png",
     banner: "/img/projects/pdf.png",
   },
+  {
+    title: "Trackly app",
+    description:
+      "Create reminders with multiple tasks, mark them complete, edit, or delete as needed. Reminders auto-complete when all tasks are done. Secure user signup and login keep your tasks accessible anytime.",
+    link: "https://trackly-app-72ko.vercel.app/",
+    status: {
+      inProgress: true,
+      complete: false,
+      paused: false,
+      cancelled: false,
+    },
+    technologies: ["MEVN stack"],
+    image: "/img/projects/trackly.png",
+    banner: "/img/projects/trackly.png",
+  },
+
 
   {
     title: "Ana Blogs",
@@ -174,21 +204,6 @@ export const projects = [
     banner: "/img/projects/brain.png",
   },
   {
-    title: "CRUD Blog Application",
-    description:
-      "Dynamic blog website with dual light/dark mode, integrated Google authentication, user registration for an enriched user experience.",
-    link: "https://github.com/uzair-shafi/NEXTJS-Blog-Website-CRUD.git",
-    status: {
-      inProgress: true,
-      complete: false,
-      paused: false,
-      cancelled: false,
-    },
-    technologies: ["NextJS", "NodeJS", "Next-Auth", "Tailwindcss"],
-    image: "/img/projects/blog.png",
-    banner: "/img/projects/blog.png",
-  },
-  {
     title: "Krypt Web 3.0",
     description:
       "It is a modern web3.0 application where a user can send digital currencies to anyone around the world.",
@@ -219,21 +234,6 @@ export const projects = [
     image: "/img/projects/meta.png",
     banner: "/img/projects/meta.png",
   },
-  {
-    title: "Hoobank Landing Page",
-    description:
-      "Cutting-edge business website crafted with React and Tailwind CSS, featuring a sleek, modern design with an elegant dark theme.",
-    link: "https://dark-themed-react-business-website.vercel.app/",
-    status: {
-      inProgress: true,
-      complete: false,
-      paused: false,
-      cancelled: false,
-    },
-    technologies: ["ReactJS", "Tailwindcss"],
-    image: "/img/projects/hoo.png",
-    banner: "/img/projects/hoo.png",
-  },
 
   {
     title: "3D Portfolio Website",
@@ -254,12 +254,12 @@ export const projects = [
 
 export const wpprojects = [
   {
-    title: "Prisma Assist",
+    title: "TMC Marketers",
 
-    link: "https://prismaassist.com/about-us/",
+    link: "https://tmcmarketers.com/",
 
-    image: "/img/projects/prisma.png",
-    banner: "/img/projects/prisma.png",
+    image: "/img/projects/tmc.png",
+    banner: "/img/projects/tmc.png",
   },
   {
     title: "Dalton Litz",
@@ -287,14 +287,6 @@ export const wpprojects = [
     image: "/img/projects/vetrox.png",
     banner: "/img/projects/vetrox.png",
   },
-  {
-    title: "Axesell",
-
-    link: "https://axesell.co/",
-
-    image: "/img/projects/axesell.png",
-    banner: "/img/projects/axesell.png",
-  },
 
   {
     title: "Invicta Counselling",
@@ -304,14 +296,7 @@ export const wpprojects = [
     image: "/img/projects/invicta.png",
     banner: "/img/projects/invicta.png",
   },
-  {
-    title: "Advent Assets",
 
-    link: "https://adventassets.us/",
-
-    image: "/img/projects/advent.png",
-    banner: "/img/projects/advent.png",
-  },
 ];
 
 export const testimonials = [

@@ -424,7 +424,7 @@ export const technologies = [
         icon: "/svg/sql.svg",
       },
       {
-        name: "Postgrese",
+        name: "Postgres",
         icon: "/svg/postgrese.svg",
       },
       {
